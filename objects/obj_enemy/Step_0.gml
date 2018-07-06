@@ -1,16 +1,5 @@
-//=========== Get player input=============
-key_left = (keyboard_check(ord("A")));
-key_right = (keyboard_check(ord("D")));
-key_jump = (keyboard_check_pressed(vk_space));
 
-//=======Calculate Movement===========================
-var  move = key_right - key_left;
-hsp = move * walksp;
 vsp = vsp + grv;
-if (place_meeting(x,y+1,obj_wood_wall)) && (key_jump)
-{
-	vsp = -10;
-}
 
 //======Horizontal Collision====================
 if(place_meeting(x+hsp,y,obj_wood_wall))
@@ -37,7 +26,7 @@ y = y + vsp;
 //============Animation====================
 if (!place_meeting(x,y+1,obj_wood_wall))
 {
-	sprite_index = spr_playerD_jump;
+	sprite_index = spr_enemy_jump;
 	image_speed = 0;
 	if (sign(vsp) > 0) image_index = 1; else image_index = 0;
 }
@@ -46,11 +35,11 @@ else
 	image_speed = 1;
 	if (hsp == 0)
 	{
-		sprite_index = spr_playerD;
+		sprite_index = spr_enemy;
 	}
 	else
 	{
-		sprite_index = spr_playerD_run;	
+		sprite_index = spr_enemy_run;	
 	}
 }
 
