@@ -4,11 +4,10 @@
     "mvc": "1.1",
     "name": "df449b89-fa23-45ff-8f25-f2ef188305c8",
     "children": [
-        "f80c4493-7785-4876-86b2-2afdb0129dbf",
-        "4c4d0e8f-a86e-4abd-b89b-90233ff7662a"
+        "a114aa52-36fd-4c56-ba29-71581e5d1838"
     ],
     "filterType": "GMSprite",
-    "folderName": "Objects",
+    "folderName": "Walls\/floors",
     "isDefaultView": false,
     "localisedFolderName": ""
 }
