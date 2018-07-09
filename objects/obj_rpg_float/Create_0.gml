@@ -1,0 +1,1 @@
+picktime = 20

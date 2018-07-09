@@ -1,0 +1,2 @@
+
+picktime = picktime - 1
